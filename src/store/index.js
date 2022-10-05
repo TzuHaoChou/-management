@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import { setlotionToken, getlotionToken, setlotionuser, getlotionuser } from "../utils/auth";
 import { handelLogin } from "../aip/login";
+import modu from "./modules/modules"
+import getters from "./getters/getters"
 
 Vue.use(Vuex)
 
@@ -33,6 +35,8 @@ export default new Vuex.Store({
       }
     },
   },
+  getters,
   modules: {
+    modu
   }
 })

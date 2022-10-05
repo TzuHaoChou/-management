@@ -1,7 +1,7 @@
 import $axios from 'axios'
 import store from '../store/index'
 const instance = $axios.create({
-    baseURL: 'http://119.45.133.128:8089',
+    baseURL: 'http://119.45.133.128:8098',
     timeout: 5000,
 });
 
